@@ -39,6 +39,9 @@ conf.eslint = {
 
 conf.webpack = {
     target: 'web',
+    output: {
+        libraryTarget: 'umd'
+    },
     module: {
         rules: [{
             test: /(\.js)$/,

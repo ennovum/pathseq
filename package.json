@@ -5,7 +5,7 @@
   "author": "ennovum",
   "license": "MIT",
   "main": "dist/index.js",
-  "webpack": "src/index.js",
+  "module": "src/index.js",
   "dependencies": {},
   "devDependencies": {
     "babel": "^6.5.2",
