@@ -16,16 +16,8 @@ const test = buildconf.path.root + buildconf.dir.test;
 const dist = buildconf.path.root + buildconf.dir.dist;
 
 gulp.task(
-    'scripts:build',
-    jobs.webpack(src + '/*.js', dev + '/', {}));
-
-gulp.task(
     'scripts:dev',
     jobs.webpack(src + '/*.js', dev + '/', {watch: true}));
-
-gulp.task(
-    'scripts:dist',
-    jobs.webpack(src + '/*.js', dist + '/', {bail: true}));
 
 gulp.task(
     'scripts:lint',
@@ -39,3 +31,7 @@ gulp.task(
 gulp.task(
     'scripts:test-dev',
     jobs.tapepack(src + '/**/*.test.js', test + '/', {watch: true}));
+
+gulp.task(
+    'scripts:build',
+    jobs.webpack(src + '/*.js', dist + '/', {bail: true}));

@@ -17,10 +17,6 @@ gulp.task(
     jobs.run(['common:clear']));
 
 gulp.task(
-    'build',
-    jobs.run(['clear', 'scripts:build', 'scripts:dist']));
-
-gulp.task(
     'dev',
     jobs.run(['clear', 'scripts:dev']));
 
@@ -30,12 +26,12 @@ gulp.task(
 
 gulp.task(
     'test',
-    jobs.run(['scripts:test']));
+    jobs.run(['clear', 'scripts:test']));
 
 gulp.task(
     'test-dev',
-    jobs.run(['scripts:test-dev']));
+    jobs.run(['clear', 'scripts:test-dev']));
 
 gulp.task(
-    'dist',
-    jobs.run(['clear', 'scripts:dist']));
+    'build',
+    jobs.run(['clear', 'scripts:build']));

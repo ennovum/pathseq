@@ -5,6 +5,7 @@
   "author": "ennovum",
   "license": "MIT",
   "main": "dist/index.js",
+  "webpack": "src/index.js",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.21.0",
@@ -33,10 +34,10 @@
   },
   "scripts": {
     "cross-env": "node ./node_modules/cross-env/bin/cross-env.js",
-    "build": "npm run cross-env NODE_ENV=production node ./node_modules/gulp/bin/gulp.js build",
     "dev": "npm run cross-env NODE_ENV=development node ./node_modules/gulp/bin/gulp.js dev",
-    "dist": "npm run cross-env NODE_ENV=production node ./node_modules/gulp/bin/gulp.js dist",
     "lint": "npm run cross-env NODE_ENV=test node ./node_modules/gulp/bin/gulp.js lint",
-    "test": "npm run cross-env NODE_ENV=test node ./node_modules/gulp/bin/gulp.js test"
+    "test": "npm run cross-env NODE_ENV=test node ./node_modules/gulp/bin/gulp.js test",
+    "test-dev": "npm run cross-env NODE_ENV=test node ./node_modules/gulp/bin/gulp.js test-dev",
+    "build": "npm run cross-env NODE_ENV=production node ./node_modules/gulp/bin/gulp.js build"
   }
 }
