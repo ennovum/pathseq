@@ -22,7 +22,7 @@
     "lodash": "^4.17.4",
     "run-sequence": "^1.2.2",
     "through2": "^2.0.3",
-    "webpack": "^2.2.0-rc.6"
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
     "faucet": "0.0.1",
