@@ -1,0 +1,10 @@
+/node_modules
+/npm-debug.log
+/dev
+/test
+/buildconf
+/gulp
+/.eslintrc
+/.gitignore
+/buildconf.js
+/gulpfile.js
