@@ -63,8 +63,8 @@ conf.webpack = {
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
-            minimize: (env !== ENV_DEVELOPMENT),
-            sourceMap: true,
+            minimize: (env === ENV_PRODUCTION),
+            sourceMap: (env !== ENV_PRODUCTION),
             output: {
                 comments: false
             },
@@ -76,7 +76,7 @@ conf.webpack = {
             ENV: env
         })
     ],
-    devtool: (env === ENV_DEVELOPMENT) ? 'cheap-module-eval-source-map' : false,
+    devtool: (env === ENV_PRODUCTION) ? false : 'cheap-module-eval-source-map',
     bail: false,
     stats: {
         cached: false,
@@ -92,7 +92,7 @@ conf.webpack = {
     }
 };
 
-conf.tapepack = merge(conf.webpack, {
+conf.tapepack = merge({}, conf.webpack, {
     target: 'node',
     externals: {
         lodash: 'commonjs lodash',
