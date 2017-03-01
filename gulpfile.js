@@ -18,7 +18,7 @@ gulp.task(
 
 gulp.task(
     'build',
-    jobs.run(['clear', 'scripts:build']));
+    jobs.run(['clear', 'scripts:build', 'scripts:dist']));
 
 gulp.task(
     'dev',
