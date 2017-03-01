@@ -6,5 +6,6 @@
 /gulp
 /.eslintrc
 /.gitignore
+/.npmignore
 /buildconf.js
 /gulpfile.js
