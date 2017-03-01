@@ -58,7 +58,7 @@ conf.webpack = {
         extensions: ['.js', '.json'],
         alias: {
             'conf': confFile,
-            'modules': conf.path.root + conf.dir.src + '/modules'
+            'src': conf.path.root + conf.dir.src
         }
     },
     plugins: [

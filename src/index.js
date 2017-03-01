@@ -1,4 +1,4 @@
-import {pathseq} from 'modules/pathseq/pathseq';
+import {pathseq} from 'src/pathseq/pathseq';
 
 export default pathseq;
 export {pathseq};
