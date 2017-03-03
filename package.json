@@ -30,7 +30,7 @@
     "webpack": "^2.2.1"
   },
   "config": {
-    "build": "default"
+    "buildconf": "default"
   },
   "scripts": {
     "cross-env": "node ./node_modules/cross-env/bin/cross-env.js",
