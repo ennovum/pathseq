@@ -1,8 +1,9 @@
 {
   "name": "pathseq",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Dead simple object path to sequence converter.",
   "author": "ennovum",
+  "repository": "https://github.com/ennovum/pathseq",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "src/index.js",
