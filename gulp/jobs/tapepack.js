@@ -34,7 +34,7 @@ const tapepackJob = function tapepackJob(src, dest, opts) {
                     (new Function('require', source))(require2);
                 }
                 catch (err) {
-                    tapepackError(err);
+                    tapepackLog(err);
 
                     if (callback && opts.bail) {
                         callback(err);
@@ -53,10 +53,6 @@ const tapepackJob = function tapepackJob(src, dest, opts) {
 
 function tapepackLog(message) {
     gutil.log(logTag, message);
-}
-
-function tapepackError(error) {
-    gutil.error(logTag, error);
 }
 
 module.exports = tapepackJob;
