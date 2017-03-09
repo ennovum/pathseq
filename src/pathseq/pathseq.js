@@ -2,6 +2,10 @@ const SECTION_CLEAN_REGEXP = /\]/g;
 const SECTION_SPLIT_REGEXP = /\[/g;
 
 function pathseq(path) {
+    if (path === undefined || path === null) {
+        return null;
+    }
+
     const sections = path.split('.');
 
     const sequence = sections.reduce((sequence, section, level) => {
