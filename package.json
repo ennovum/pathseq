@@ -1,6 +1,6 @@
 {
   "name": "pathseq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Dead simple object path to sequence converter.",
   "author": "ennovum",
   "repository": "https://github.com/ennovum/pathseq",
