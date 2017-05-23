@@ -6,7 +6,6 @@
   "repository": "https://github.com/ennovum/pathseq",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "src/index.js",
   "dependencies": {},
   "devDependencies": {
     "babel": "^6.5.2",
