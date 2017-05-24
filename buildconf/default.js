@@ -6,6 +6,8 @@ const merge = require('lodash/merge');
 const root = path.resolve(__dirname, '..');
 const nodeModules = path.join(root, 'node_modules');
 
+const LIBRARY = 'pathseq';
+
 const ENV_PRODUCTION = 'production';
 const ENV_DEVELOPMENT = 'development';
 const ENV_TEST = 'test';
@@ -40,6 +42,7 @@ conf.eslint = {
 conf.webpack = {
     target: 'web',
     output: {
+        library: LIBRARY,
         libraryTarget: 'umd'
     },
     module: {
